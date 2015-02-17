@@ -1,4 +1,6 @@
 <?PHP
+defined('ABSPATH') or exit;
+
 function wpsecureops_easy_firewall_normalize_line_endings($s)
 {
     // Convert all line-endings to UNIX format
