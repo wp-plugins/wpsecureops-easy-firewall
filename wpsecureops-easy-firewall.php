@@ -6,7 +6,7 @@ defined('ABSPATH') or exit;
 Plugin Name: WPSecureOps Easy Firewall
 Plugin URI: http://wpsecureops.com/
 Description: Simple to use and free security firewall which does not require any coding skills! Simply enable/disable features in the settings page.
-Version: 1.2
+Version: 1.3
 Author: WPSecureOps
 Author URI: http://wpsecureops.com/
 License: GPLv2 or later (http://www.gnu.org/licenses/gpl-2.0.html)

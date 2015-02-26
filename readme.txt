@@ -4,7 +4,7 @@ Donate link: http://wpsecureops.com/
 Tags: access, hatccess, htacces,  htaces, htacess, htecces, hteccess, htecess, protect, guard, exploit, 0day, hack, hacking, malware, security, vulnerability, Anti Virus, AntiVirus, firewall, fire wall, hacking, virus, protection, wpsecureops, antivirus, allow, allow directive, allow from, client hostname, Control Access, deny, deny directive, deny from, directive, directive block, ip-address, website access, plugin
 Requires at least: 3.3.1
 Tested up to: 4.1
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,9 @@ Currently we provide community based support via WordPress.org's plugin forums.
 1. This is how simple the configuration of this plugin is, but it will protect your site from tons of attacks every month!
 
 == Changelog ==
+
+= 1.3 =
+* This plugin is now PHP5.0+ compatible
 
 = 1.2 =
 * Improvements to guarantee that the site won't get locked when installing, uninstalling, activating and deactivating the plugin
