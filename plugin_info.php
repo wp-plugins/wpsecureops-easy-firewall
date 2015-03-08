@@ -8,10 +8,10 @@ if (!isset($WPSecureOps)) {
 
 $pluginId = "wpsecureops_easy_firewall";
 
-$WPSecureOps[$pluginId] = [
+$WPSecureOps[$pluginId] = array(
     "title"   => "WPSecureOps Easy Firewall",
     "id"      => $pluginId,
-    "version" => "1.3",
-];
+    "version" => "1.4",
+);
 
 return $pluginId;

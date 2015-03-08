@@ -6,7 +6,7 @@ defined('ABSPATH') or exit;
 Plugin Name: WPSecureOps Easy Firewall
 Plugin URI: http://wpsecureops.com/
 Description: Simple to use and free security firewall which does not require any coding skills! Simply enable/disable features in the settings page.
-Version: 1.3
+Version: 1.4
 Author: WPSecureOps
 Author URI: http://wpsecureops.com/
 License: GPLv2 or later (http://www.gnu.org/licenses/gpl-2.0.html)
@@ -146,7 +146,7 @@ allow from all
 
 function wpsecureops_easy_firewall__ftp_forms($s = false)
 {
-    static $forms = [];
+    static $forms = array();
 
     if (isset($s) && $s) {
         $forms[] = $s;
@@ -168,13 +168,13 @@ function wpsecureops_easy_firewall__file_put_contents($fullpath, $contents)
             $url   = "options.php";
             $nonce = wp_create_nonce("wpsecureops-easy-firewall-settings-group-options");
             $_POST = array_merge($_POST,
-            [
+            array(
                 "_wpnonce"         => $nonce,
                 "option_page"      => "wpsecureops-easy-firewall-settings-group",
                 "action"           => "update",
                 "submit"           => "Save changes",
                 "_wp_http_referer" => admin_url("/options-general.php?page=wpsecureops-easy-firewall/settings.php"),
-            ]);
+            ));
             foreach ($wpsecureops_easy_firewall_options as $k => $v) {
                 if (!is_array($v)) {
                     $_POST[ "wpsecureops_easy_firewall_" . $k . "" ] = $v;

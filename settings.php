@@ -4,7 +4,7 @@ defined('ABSPATH') or exit;
 function wpsecureops_easy_firewall_normalize_line_endings($s)
 {
     // Convert all line-endings to UNIX format
-    $s = str_replace(["\r\n", "\r"], "\n", $s);
+    $s = str_replace(array("\r\n", "\r"), "\n", $s);
 
     return $s;
 }
@@ -226,7 +226,7 @@ function wpsecureops_easy_firewall_set_option_blockbots($v)
 
 function wpsecureops_easy_firewall_get_all_options()
 {
-    $r                           = [];
+    $r                           = array();
     $r['protected_user']     = wpsecureops_easy_firewall_get_protected_user();
     $r['protected_password'] = wpsecureops_easy_firewall_get_protected_password();
     $r['passwordProtected']  = wpsecureops_easy_firewall_get_passwordProtected();
